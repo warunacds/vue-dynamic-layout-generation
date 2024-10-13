@@ -1,6 +1,6 @@
 <template>
     <div :style="compStyles">
-        <pre> {{ componentId }}</pre>
+        <p style="padding: 8px;"> {{ componentId }}</p>
     </div>
 </template>
 
