@@ -3,9 +3,7 @@
         <template v-for="(col, colIndex) in row" :key="`col-${colIndex}`">
             <v-col :cols="col.col">
                 <template v-if="col.row">
-                    <RecursiveRow :row="col.row" :slotsData="slotsData" :slotsDatatypes="slotsDatatypes"
-                        :pageParams="pageParams" :row-id="rowId">
-                    </RecursiveRow>
+                    <RecursiveRow :row="col.row"> </RecursiveRow>
                 </template>
                 <template v-else>
                     <DynamicComponent :component-id="col.component_id"></DynamicComponent>
@@ -26,10 +24,6 @@ import RecursiveRow from './RecursiveRow.vue';
 
 defineProps({
     row: Array,
-    slotsData: Object,
-    slotsDatatypes: Object,
-    pageParams: Object,
-    rowId: [String, Number]
 });
 
 
