@@ -6,18 +6,18 @@ It uses vuetify as base layout for the convienece. But you can use any Vue compo
 
 Sample Yaml Layout Should look like this.
 
+```yaml
 ---
-
 row:
-
-- col: 12
-  row:
   - col: 12
-    component_id: 1
-- col: 12
-  row:
-  - col: 6
-    component_id: 2
+    row:
+      - col: 12
+        component_id: 1
+  - col: 12
+    row:
+      - col: 6
+        component_id: 2
+```
 
 Remember indentation is impornt in YAML. Therefore copy and pasting above example might not work.
 
