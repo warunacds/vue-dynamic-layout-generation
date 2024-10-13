@@ -2,15 +2,13 @@
     <v-row>
         <template v-for="(col, colIndex) in row" :key="`col-${colIndex}`">
             <v-col :cols="col.col">
-                <template v-if="col.slot">
-                    <DynamicComponent :component-id="col.slot"></DynamicComponent>
-
-                </template>
-
                 <template v-if="col.row">
                     <RecursiveRow :row="col.row" :slotsData="slotsData" :slotsDatatypes="slotsDatatypes"
                         :pageParams="pageParams" :row-id="rowId">
                     </RecursiveRow>
+                </template>
+                <template v-else>
+                    <DynamicComponent :component-id="col.component_id"></DynamicComponent>
                 </template>
             </v-col>
         </template>
