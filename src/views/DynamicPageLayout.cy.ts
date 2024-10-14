@@ -1,6 +1,6 @@
 import DynamicPageLayout from './DynamicPageLayout.vue'
 
-describe('<DynamicPageLayout />', () => {
+describe('<DynamicPageLayout /> renders', () => {
   it('renders', () => {
     // see: https://on.cypress.io/mounting-vue
     cy.mount(DynamicPageLayout)
