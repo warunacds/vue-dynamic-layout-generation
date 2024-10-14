@@ -36,3 +36,9 @@ npm install
 ```sh
 npm run dev
 ```
+
+### Run Cypress Component testing
+
+```sh
+npm run test:comp
+```
